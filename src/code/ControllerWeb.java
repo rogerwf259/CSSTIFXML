@@ -35,9 +35,7 @@ public class ControllerWeb implements Initializable {
     @FXML
     BorderPane video;
     @FXML
-    JFXToggleNode  backBtn;
-    @FXML
-    JFXButton minimizeBtn, closeBtn;
+    JFXButton backBtn, minimizeBtn, closeBtn;
     @FXML
     ImageView camfeed;
     @FXML
@@ -120,7 +118,6 @@ public class ControllerWeb implements Initializable {
         }
     }
     public void initFetch() {
-        //webcam.open();
         Runnable task = () -> {
           isRunning = true;
           websiteChange();

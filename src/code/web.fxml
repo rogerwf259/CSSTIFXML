@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXToggleNode?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
 <StackPane fx:id="visualizador" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.ControllerWeb">
@@ -32,14 +30,10 @@
          <top>
             <HBox BorderPane.alignment="CENTER">
                <children>
-                  <JFXToggleNode prefHeight="15.0" prefWidth="15.0" style="-fx-border-color: black;">
-                     <graphic>
-                        <Text fx:id="backBtn" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                     </graphic>
-                  </JFXToggleNode>
+                  <JFXButton fx:id="backBtn" layoutX="558.0" layoutY="10.0" text="Back" />
                   <Region HBox.hgrow="ALWAYS" />
-                  <JFXButton fx:id="minimizeBtn" layoutX="10.0" layoutY="10.0" />
-                  <JFXButton fx:id="closeBtn" layoutX="10.0" layoutY="10.0" />
+                  <JFXButton fx:id="minimizeBtn" layoutX="10.0" layoutY="10.0" text="Minimize" />
+                  <JFXButton fx:id="closeBtn" layoutX="10.0" layoutY="10.0" text="Close" />
                </children>
             </HBox>
          </top>
